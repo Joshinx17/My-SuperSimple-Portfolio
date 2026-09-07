@@ -1,83 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshin's Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joshin K Saju | Resume</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #f3f4f6;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+  }
+  .resume {
+    max-width: 950px;
+    margin: 32px auto;
+    background: #fff;
+    padding: 42px 52px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+  }
+  header {
+    text-align: center;
+    border-bottom: 2px solid #1f2937;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .headline {
+    margin: 6px 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #4b5563;
+  }
+  .contact {
+    font-size: 13px;
+    color: #374151;
+    word-break: break-word;
+  }
+  .contact a {
+    color: inherit;
+    text-decoration: none;
+  }
+  section { margin-top: 22px; }
+  h2 {
+    margin: 0 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #9ca3af;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+  }
+  p { margin: 0; font-size: 14px; }
+  .skills p { margin: 5px 0; }
+  .item { margin-bottom: 18px; }
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+  .title { font-size: 15px; font-weight: 700; }
+  .date { font-size: 13px; white-space: nowrap; }
+  .subtitle {
+    font-size: 13.5px;
+    color: #4b5563;
+    margin-bottom: 6px;
+  }
+  ul {
+    margin: 6px 0 0;
+    padding-left: 19px;
+    font-size: 14px;
+  }
+  li { margin-bottom: 4px; }
+  .publication-title { font-weight: 700; }
+  .small { font-size: 13px; color: #4b5563; margin-top: 4px; }
+
+  @media (max-width: 700px) {
+    .resume { margin: 0; padding: 28px 22px; box-shadow: none; }
+    .title-row { flex-direction: column; gap: 1px; }
+    .date { white-space: normal; }
+  }
+
+  @media print {
+    body { background: #fff; }
+    .resume { box-shadow: none; margin: 0; max-width: none; padding: 20px 28px; }
+    section { break-inside: avoid; }
+  }
+</style>
 </head>
 <body>
-    <header>
-        <div class="profile-image">
-            <img src="./images/Profile Picture.jpeg" alt="Your Photo" />
-        </div>
-        <div class="header-text">
-            <h1>Joshin K. Saju</h1>
-            <p>
-            Email: <a href="mailto:your.email@example.com">joshinkoshys@gmail.com</a> |
-            <a href="https://www.linkedin.com/in/joshinsaju/" target="_blank">LinkedIn</a>
-            </p>
-        </div>
-    </header>
+<main class="resume">
 
-
-
-  <div class="container">
-    <section>
-      <h2>About Me</h2>
-      <p>I am a Computer Science Engineer with a passion for creating tools to solve problems. I am currently working in Web Development and Design, and I enjoy solving problems through creative technology solutions.</p>
-    </section>
-
-    <section>
-      <h2>Educational Qualification</h2>
-      <ul>
-        <li>B.Tech- Computer Science & IT - Sharda University, Noida, 2026</li>
-        <li>Class 10th, 12th (CBSE) - St. Gregorios School, Dwarka, 2022</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Skills and Technologies</h2>
-      <ul>
-        <li>Programming Languages: C, Java, Python, JavaScript, SQL</li>
-        <li>Web: HTML, CSS, React, Node.js, MongoDB, PHP</li>
-        <li>Tools: Git, Tkinter, VS Code, KivyMD, Android Studio, AutoCAD, Canva, Ms Word & Ms Excel</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Languages Known</h2>
-      <ul>
-        <li>English - Fluent</li>
-        <li>Hindi - Native</li>
-        <li>Malayalam - Native</li>
-        <li>French - Elemantary</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Certifications and Awards</h2>
-      <ul>
-        <li>Certified in Full Stack Development from Udemy</li>
-        <li>Runner up at Hackathon, Sharda University</li>
-        <li>Participated in Python Bootcamp by Sharda University</li>
-        <li>Summer internship at OneThe416 Technologies Pvt. Ltd</li>
-    </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Project 1:</strong> A Password Management System using Python and KivyMD. <a href="#">View Project</a></li>
-        <li><strong>Project 2:</strong> A School ERP system using Web Development tools like HTML, CSS, JavaScript and Bootstrap<a href="#">View Project</a></li>
-        <li><strong>Project 3:</strong> An Event reminder, planner and gift suggestion website<a href="#">View Project</a></li>
-        <li><strong>Project 4:</strong> An Airport management website using web development <a href="#">View Project</a></li>
-        <li><strong>Project 5:</strong> A virtual desktop voice assistant using python and CustomTkinter.<a href="#">View Project</a></li>
-        <li><strong>Project 5:</strong> Hand Sign Language detection for Deaf people using Machine Learning<a href="#">View Project</a></li>
-      </ul>
-    </section>
+<header>
+  <h1>JOSHIN K SAJU</h1>
+  <div class="headline">Software Engineer | Full-Stack Developer | AI/ML Enthusiast</div>
+  <div class="contact">
+    +91 9667972091 | joshinkoshys@gmail.com |
+    <a href="https://linkedin.com/in/joshinsaju/" target="_blank">linkedin.com/in/joshinsaju/</a> |
+    <a href="https://github.com/Joshinx17" target="_blank">github.com/Joshinx17</a> |
+    Delhi, India
   </div>
+</header>
 
-  <script src="./script.js"></script>
+<section>
+<h2>Professional Summary</h2>
+<p>
+B.Tech graduate in Information Technology with hands-on experience in software development, full-stack web development, Python application development, and artificial intelligence and machine learning. Skilled in building responsive web applications using React.js, JavaScript, Tailwind CSS, and modern web technologies, with experience developing Python-based desktop software, AI-powered assistants using the OpenAI API and prompt engineering, and CNN-based deep learning models using TensorFlow and Keras for computer vision applications. Strong foundation in Data Structures and Algorithms, Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, Git, and software engineering principles. Seeking an entry-level Software Engineer or Full-Stack Developer role where I can apply my technical skills to build scalable, impactful products and solve real-world engineering problems.
+</p>
+</section>
+
+<section class="skills">
+<h2>Technical Skills</h2>
+<p><strong>Programming Languages:</strong> Java, Python, JavaScript, SQL, C, Kotlin</p>
+<p><strong>Frontend:</strong> React.js, HTML5, CSS3, Tailwind CSS, Bootstrap, Vite</p>
+<p><strong>Backend:</strong> Spring Boot, Node.js, REST APIs, Spring Security, JWT, JPA, Hibernate</p>
+<p><strong>Databases:</strong> MySQL, MongoDB, SQLite</p>
+<p><strong>AI/ML:</strong> TensorFlow, Keras, PyTorch, OpenCV, Scikit-learn, Machine Learning, Deep Learning, CNNs, Computer Vision</p>
+<p><strong>Tools:</strong> Git, GitHub, Postman, VS Code, IntelliJ IDEA, Android Studio</p>
+<p><strong>Core CS:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, DBMS, Operating Systems, Computer Networks</p>
+</section>
+
+<section>
+<h2>Experience</h2>
+
+<div class="item">
+  <div class="title-row">
+    <div class="title">Front-End Designer &amp; Web Developer — SK Info Techies</div>
+    <div class="date">May 2025 – July 2025</div>
+  </div>
+  <div class="subtitle">Hybrid</div>
+  <ul>
+    <li>Designed and developed 5+ responsive landing pages using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.</li>
+    <li>Collaborated with a 5-member cross-functional team to migrate legacy content, ensuring accurate data transfer and a smooth transition.</li>
+    <li>Leveraged AI-assisted tools, including Gemini AI Studio, to streamline development workflows and reduce repetitive manual effort.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="title-row">
+    <div class="title">Python App Developer &amp; UI/UX Designer — OneThe416 Technologies Pvt. Ltd.</div>
+    <div class="date">June 2024</div>
+  </div>
+  <div class="subtitle">Offline</div>
+  <ul>
+    <li>Developed a desktop GUI application using Python, Tkinter, and CustomTkinter to improve user workflow and application usability.</li>
+    <li>Designed UI/UX wireframes, prototypes, and high-fidelity designs in Figma to improve usability and visual consistency.</li>
+    <li>Authored technical documentation covering system architecture, features, and user guidelines.</li>
+    <li>Maintained and updated the shared GitHub codebase to support collaboration with the development team.</li>
+  </ul>
+</div>
+</section>
+
+<section>
+<h2>Projects</h2>
+
+<div class="item">
+  <div class="title">Automated Multi-Class Skin Disease Detection System</div>
+  <div class="subtitle">Python · PyTorch · ResNet50 · Pandas · NumPy</div>
+  <ul>
+    <li>Developed a deep learning framework to classify 7 categories of skin lesions, including melanoma, using the HAM10000 dataset.</li>
+    <li>Developed a fusion architecture combining image features from a fine-tuned ResNet50 model with patient metadata, including age, sex, and localization.</li>
+    <li>Implemented WeightedRandomSampler and data augmentation to address class imbalance, achieving 89% overall accuracy and 99% recall for melanoma.</li>
+    <li>Authored a research paper detailing the methodology and results of the system.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="title">CNN-Based Diabetic Foot Ulcer Detection System</div>
+  <div class="subtitle">Python · TensorFlow · Keras · OpenCV · NumPy · Matplotlib</div>
+  <ul>
+    <li>Developed a deep learning CNN model to detect diabetic foot ulcers from medical images with 95% classification accuracy.</li>
+    <li>Applied image preprocessing and data augmentation techniques to improve model robustness and generalization.</li>
+    <li>Evaluated model performance using accuracy, precision, recall, and F1-score, and applied optimization techniques to reduce overfitting.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="title">Desktop Voice Assistant</div>
+  <div class="subtitle">Python · CustomTkinter · SQLite · OpenAI API</div>
+  <ul>
+    <li>Built a desktop assistant supporting voice and text commands for Wikipedia search, weather updates, news retrieval, email handling, and screenshots.</li>
+    <li>Integrated speech recognition, text-to-speech, SQLite, and a responsive GUI for seamless interaction.</li>
+    <li>Integrated the OpenAI API to enable AI-powered conversational responses and natural language interactions.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="title">Airport Information Management System (AIMS)</div>
+  <div class="subtitle">HTML · CSS · JavaScript · Bootstrap</div>
+  <ul>
+    <li>Built a responsive web-based airport management interface featuring role-based navigation and user workflows.</li>
+    <li>Developed modules for airport operations, invoicing, traffic data, and safety dashboards.</li>
+    <li>Implemented modern UI/UX principles, animations, responsive layouts, and GitHub-based version control.</li>
+  </ul>
+</div>
+</section>
+
+<section>
+<h2>Publication</h2>
+<div class="publication-title">A Deep Learning Framework for Automated Multi-Class Skin Disease Detection Using Dermoscopic Images</div>
+<p class="small">Published in the 5th International Conference on Innovative Practices in Technology and Management (ICIPTM), 2026</p>
+<p class="small"><strong>Authors:</strong> Joshin K Saju, Deepayan Thakur, Parth Sharma, Anand Pandey</p>
+</section>
+
+<section>
+<h2>Education</h2>
+<div class="title-row">
+  <div class="title">Bachelor of Technology in Information Technology</div>
+  <div class="date">2022 – 2026</div>
+</div>
+<div class="subtitle">Sharda University, Greater Noida, Uttar Pradesh | CGPA: 8.2/10</div>
+</section>
+
+<section>
+<h2>Certifications &amp; Achievements</h2>
+<ul>
+  <li>Machine Learning A-Z: AI, Python &amp; R — Udemy (Jul 2025)</li>
+  <li>Introduction to Prompt Engineering — Sharda University (Jan 2025)</li>
+  <li>Complete Web Development Bootcamp — Udemy (May 2024)</li>
+  <li>Foundation of Cloud IoT Edge ML — NPTEL (Apr 2024)</li>
+  <li>Participated in Internal Smart India Hackathon — Sharda University (Sep 2024)</li>
+</ul>
+</section>
+
+</main>
 </body>
 </html>
